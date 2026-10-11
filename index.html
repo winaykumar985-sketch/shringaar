@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shringaar Artistryy | Premium Makeup Artist by Sahithi</title>
+    
+    <!-- Google Fonts for luxurious typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Playfair Display for primary elegant serif headings, Great Vibes for the signature, Montserrat for clean body text -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#0a0a0a',
+                            dark: '#111111',
+                            gold: '#D4AF37',       /* Primary Metallic Gold */
+                            goldlight: '#F3E5AB',  /* Light Gold for highlights */
+                            golddark: '#AA8529'    /* Dark Gold for hover states */
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                        signature: ['"Great Vibes"', 'cursive'],
+                    },
+                    backgroundImage: {
+                        'dark-texture': 'linear-gradient(to bottom, rgba(10,10,10,0.95), rgba(10,10,10,0.98)), url("https://www.transparenttextures.com/patterns/stardust.png")',
+                        'gold-gradient': 'linear-gradient(135deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C)',
+                    },
+                    boxShadow: {
+                        'gold-glow': '0 0 15px rgba(212, 175, 55, 0.3)',
+                        'gold-glow-hover': '0 0 25px rgba(212, 175, 55, 0.6)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Styles for Gold Text and Borders */
+        body {
+            background-color: #0a0a0a;
+            color: #ffffff;
+        }
+        .text-gold-gradient {
+            background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        /* Decorative separator */
+        .separator {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+        .separator::before, .separator::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.4);
+            max-width: 100px;
+        }
+        .separator:not(:empty)::before { margin-right: 1rem; }
+        .separator:not(:empty)::after { margin-left: 1rem; }
+        
+        /* Service List Bullets */
+        .service-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .service-list li::before {
+            content: '•';
+            color: #D4AF37;
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-brand-gold selection:text-black">
+
+    <!-- Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-brand-black/90 backdrop-blur-md border-b border-brand-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full border border-brand-gold flex items-center justify-center">
+                        <span class="font-serif text-xl text-brand-gold">S</span>
+                    </div>
+                    <span class="font-serif text-xl tracking-widest text-brand-gold">SHRINGAAR</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-gray-300 hover:text-brand-gold uppercase tracking-wider text-sm transition-colors">Home</a>
+                    <a href="#services" class="text-gray-300 hover:text-brand-gold uppercase tracking-wider text-sm transition-colors">Services</a>
+                    <a href="https://wa.me/916305528447?text=Hello%20Sahithi,%20I%20am%20reaching%20out%20from%20your%20website%20and%20would%20like%20to%20inquire%20about%20booking%20your%20services%20for%20my%20special%20day." target="_blank" class="bg-brand-gold text-black px-6 py-2 rounded-full text-sm font-semibold uppercase tracking-wider hover:bg-brand-goldlight transition-all shadow-gold-glow">
+                        Book Now
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="bg-dark-texture min-h-screen">
+        
+        <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 flex flex-col items-center justify-center min-h-[90vh] px-4 text-center">
+            
+            <!-- Logo Emblem mimicking the flyer -->
+            <div class="relative w-40 h-40 md:w-56 md:h-56 mb-8 flex items-center justify-center group">
+                <!-- Outer decorative ring -->
+                <div class="absolute inset-0 border-2 border-brand-gold/40 rounded-full group-hover:border-brand-gold transition-colors duration-500"></div>
+                <div class="absolute inset-2 border border-brand-gold border-dashed rounded-full animate-[spin_60s_linear_infinite]"></div>
+                
+                <!-- Wreath Accents -->
+                <i class="fa-solid fa-leaf text-brand-gold absolute -left-4 top-1/2 -translate-y-1/2 -rotate-90 text-2xl drop-shadow-[0_0_5px_rgba(212,175,55,0.8)] opacity-80"></i>
+                <i class="fa-solid fa-leaf text-brand-gold absolute -right-4 top-1/2 -translate-y-1/2 rotate-90 text-2xl drop-shadow-[0_0_5px_rgba(212,175,55,0.8)] opacity-80"></i>
+
+                <!-- Inner S -->
+                <span class="font-serif text-7xl md:text-9xl text-brand-gold drop-shadow-[0_0_10px_rgba(212,175,55,0.8)]">S</span>
+            </div>
+
+            <!-- Typography -->
+            <h1 class="text-5xl md:text-7xl font-serif font-normal text-white mb-2 tracking-wide text-gold-gradient">
+                Shringaar Artistryy
+            </h1>
+            <h2 class="text-xl md:text-2xl font-serif tracking-[0.2em] text-brand-gold uppercase mt-4 mb-2">
+                Makeup Artist
+            </h2>
+            <div class="font-signature text-4xl md:text-5xl text-brand-goldlight mb-12 transform -rotate-2">
+                By Sahithi
+            </div>
+
+            <!-- CTA -->
+            <a href="https://wa.me/916305528447?text=Hello%20Sahithi,%20I%20am%20reaching%20out%20from%20your%20website%20and%20would%20like%20to%20inquire%20about%20booking%20your%20services%20for%20my%20special%20day." target="_blank" class="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-black uppercase tracking-widest bg-brand-gold rounded-sm overflow-hidden transition-all hover:bg-brand-goldlight shadow-gold-glow hover:shadow-gold-glow-hover hover:-translate-y-1">
+                <span class="mr-2"><i class="fa-brands fa-whatsapp text-xl"></i></span>
+                Book Your Special Day Now!
+            </a>
+            <p class="mt-4 text-gray-400 font-light tracking-widest text-sm">
+                <i class="fa-solid fa-phone mr-2 text-brand-gold"></i> 6305528447
+            </p>
+        </section>
+
+        <section id="services" class="py-20 bg-brand-black relative z-10 border-t border-brand-gold/20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Section Header -->
+                <div class="text-center mb-16">
+                    <div class="separator">
+                        <i class="fa-solid fa-leaf text-brand-gold text-sm"></i>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-serif font-normal text-brand-gold tracking-wide uppercase">
+                        Our Services
+                    </h2>
+                    <div class="separator">
+                        <i class="fa-solid fa-leaf text-brand-gold text-sm transform rotate-180"></i>
+                    </div>
+                </div>
+
+                <!-- Services Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Makeup Card -->
+                    <div class="bg-brand-dark border border-brand-gold/30 rounded-lg p-8 hover:border-brand-gold transition-all duration-300 hover:shadow-gold-glow-hover group">
+                        <div class="text-center mb-6">
+                            <i class="fa-solid fa-wand-magic-sparkles text-3xl text-brand-gold mb-4 group-hover:scale-110 transition-transform"></i>
+                            <h3 class="text-2xl font-serif text-brand-gold tracking-widest uppercase border-b border-brand-gold/30 pb-4 inline-block">Makeup</h3>
+                        </div>
+                        <ul class="service-list text-gray-300 font-light space-y-2">
+                            <li>Bridal Makeup</li>
+                            <li>Simple Makeup</li>
+                            <li>Pre-Wedding Makeup</li>
+                            <li>Party Makeup</li>
+                            <li>Engagement Makeup</li>
+                            <li>Reception Makeup</li>
+                            <li>Bridesmaid Makeup</li>
+                            <li>Half Saree Makeup</li>
+                            <li>Baby Shower Makeup</li>
+                        </ul>
+                    </div>
+
+                    <!-- Hairstyles Card -->
+                    <div class="bg-brand-dark border border-brand-gold/30 rounded-lg p-8 hover:border-brand-gold transition-all duration-300 hover:shadow-gold-glow-hover group relative lg:-top-6">
+                        <div class="text-center mb-6">
+                            <i class="fa-solid fa-scissors text-3xl text-brand-gold mb-4 group-hover:scale-110 transition-transform"></i>
+                            <h3 class="text-2xl font-serif text-brand-gold tracking-widest uppercase border-b border-brand-gold/30 pb-4 inline-block">Hairstyles</h3>
+                        </div>
+                        <ul class="service-list text-gray-300 font-light space-y-2">
+                            <li>Bridal Hairstyles</li>
+                            <li>Party Hairstyles</li>
+                            <li>Open Curls</li>
+                            <li>Bun Styles</li>
+                        </ul>
+                    </div>
+
+                    <!-- Saree Card -->
+                    <div class="bg-brand-dark border border-brand-gold/30 rounded-lg p-8 hover:border-brand-gold transition-all duration-300 hover:shadow-gold-glow-hover group">
+                        <div class="text-center mb-6">
+                            <i class="fa-solid fa-person-dress text-3xl text-brand-gold mb-4 group-hover:scale-110 transition-transform"></i>
+                            <h3 class="text-2xl font-serif text-brand-gold tracking-widest uppercase border-b border-brand-gold/30 pb-4 inline-block">Saree</h3>
+                        </div>
+                        <ul class="service-list text-gray-300 font-light space-y-2">
+                            <li>Saree Pre-Pleating</li>
+                            <li>Saree Box Folding</li>
+                            <li>Saree Puffy Pleats</li>
+                            <li>Saree Hanger Folding</li>
+                            <li>Saree Draping<br><span class="text-xs text-gray-500 block mt-1">(Different Styles)</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="bg-brand-dark border-t border-brand-gold/30 py-16 text-center">
+            <div class="max-w-4xl mx-auto px-4">
+                
+                <div class="w-16 h-16 rounded-full border border-brand-gold flex items-center justify-center mx-auto mb-8">
+                    <span class="font-serif text-3xl text-brand-gold">S</span>
+                </div>
+
+                <h3 class="text-2xl md:text-3xl font-serif text-white mb-6">Book Your Special Day Now!</h3>
+                
+                <div class="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 mb-10 text-brand-goldlight">
+                    <!-- Phone/WA -->
+                    <a href="https://wa.me/916305528447?text=Hello%20Sahithi,%20I%20am%20reaching%20out%20from%20your%20website%20and%20would%20like%20to%20inquire%20about%20booking%20your%20services%20for%20my%20special%20day." target="_blank" class="flex items-center gap-3 hover:text-brand-gold transition-colors">
+                        <div class="w-12 h-12 rounded-full bg-brand-gold/10 flex items-center justify-center">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        </div>
+                        <div class="text-left">
+                            <span class="block text-xs uppercase tracking-widest text-gray-400">WhatsApp & Phone</span>
+                            <span class="font-semibold tracking-wider">6305528447</span>
+                        </div>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://instagram.com/shringaar_artistryy" target="_blank" class="flex items-center gap-3 hover:text-brand-gold transition-colors">
+                        <div class="w-12 h-12 rounded-full bg-brand-gold/10 flex items-center justify-center">
+                            <i class="fa-brands fa-instagram text-2xl"></i>
+                        </div>
+                        <div class="text-left">
+                            <span class="block text-xs uppercase tracking-widest text-gray-400">Instagram</span>
+                            <span class="font-semibold tracking-wider">@shringaar_artistryy</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="separator max-w-sm mx-auto"></div>
+
+                <p class="text-gray-500 text-sm mt-8 uppercase tracking-widest">
+                    &copy; 2026 Shringaar Artistryy by Sahithi. All rights reserved.
+                </p>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+</html>
